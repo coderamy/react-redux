@@ -9,10 +9,11 @@ const Todos = (state = initialState, action) => {
             return {
                 ...state,
                 data:[
-                    ...state.data,{
+                    {
                         message: action.message,
                         id: action.id
-                    }
+                    },                    
+                    ...state.data
                 ]
             }
         default:

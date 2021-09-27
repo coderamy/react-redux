@@ -8,8 +8,13 @@ const AddTodo = (props) => {
     e.preventDefault();
     let input = e.target.userInput.value;
     //console.log(input)
-    props.dispatch(addTodo(input));
-    e.target.userInput.value = ''
+    if(input){
+      props.dispatch(addTodo(input));
+      e.target.userInput.value = ''
+    }else{
+      alert('Enter new todo!')
+    }
+    
     //setInput('')
   }
   return (
