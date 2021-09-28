@@ -22,7 +22,7 @@ const AddTodo = (props) => {
       <h2>Todos App</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" name="userInput" onChange={(e)=>setInput(e.target.value)} />
-        <button>Submit</button>
+        <button>Add Todo</button>
       </form>
     </div>
   );
